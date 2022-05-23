@@ -1,0 +1,37 @@
+{% extends 'base2.html.twig' %}
+
+{% block title %}Annonce index{% endblock %}
+
+{% block body %}
+    <h1>Annonce index</h1>
+{% for annonce in annonces %}
+<div class="single-job-items mb-30">
+                                    <div class="job-items">
+                                        <div class="company-img">
+                                            <li><img src="/uploads/images/annoc/{{ annonce.image }}" alt=""></li>
+                                                    
+                                        </div>
+                                        <div class="job-tittle job-tittle2">
+                                            <a href="#">
+                                                <h4>{{ annonce.titre }}</h4>
+                                            </a>
+                                            <ul>
+                                                <li>{{ annonce.description }}</li>
+                                                <li><i class="fas fa-map-marker-alt"></i>{{ annonce.adresse }}</li>
+                                                <li>{{ annonce.salaire }}</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="items-link items-link2 f-right">
+                                        <a href="{{ path('app_detailjob') }}">Apply</a>
+                                        <span>7 hours ago</span>
+                                    </div>
+                                </div>
+    
+  {% endfor %}
+    
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_annonce_new') }}">Create new</a>
+{% endblock %}

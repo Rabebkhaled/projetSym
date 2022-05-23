@@ -1,0 +1,223 @@
+/* Auth */
+
+.auth .lock-profile-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 100%;
+}
+
+.auth .auth-form-light {
+  background: #ffffff;
+}
+
+.auth .auth-form-light select {
+  color: #7e7e7e;
+}
+
+.auth .auth-form-light .input-group .form-control:focus, .auth .auth-form-light .input-group .select2-container--default .select2-selection--single:focus, .select2-container--default .auth .auth-form-light .input-group .select2-selection--single:focus, .auth .auth-form-light .input-group .select2-container--default .select2-selection--single .select2-search__field:focus, .select2-container--default .select2-selection--single .auth .auth-form-light .input-group .select2-search__field:focus, .auth .auth-form-light .input-group .typeahead:focus,
+.auth .auth-form-light .input-group .tt-query:focus,
+.auth .auth-form-light .input-group .tt-hint:focus, .auth .auth-form-light .input-group .form-control:active, .auth .auth-form-light .input-group .select2-container--default .select2-selection--single:active, .select2-container--default .auth .auth-form-light .input-group .select2-selection--single:active, .auth .auth-form-light .input-group .select2-container--default .select2-selection--single .select2-search__field:active, .select2-container--default .select2-selection--single .auth .auth-form-light .input-group .select2-search__field:active, .auth .auth-form-light .input-group .typeahead:active,
+.auth .auth-form-light .input-group .tt-query:active,
+.auth .auth-form-light .input-group .tt-hint:active {
+  border-color: #e8eff9;
+}
+
+.auth .auth-form-transparent {
+  background: transparent;
+}
+
+.auth .auth-form-transparent .form-control, .auth .auth-form-transparent .select2-container--default .select2-selection--single, .select2-container--default .auth .auth-form-transparent .select2-selection--single, .auth .auth-form-transparent .select2-container--default .select2-selection--single .select2-search__field, .select2-container--default .select2-selection--single .auth .auth-form-transparent .select2-search__field, .auth .auth-form-transparent .typeahead,
+.auth .auth-form-transparent .tt-query,
+.auth .auth-form-transparent .tt-hint,
+.auth .auth-form-transparent .input-group-text {
+  border-color: #392ccd;
+}
+
+.auth .auth-form-transparent .form-control:focus, .auth .auth-form-transparent .select2-container--default .select2-selection--single:focus, .select2-container--default .auth .auth-form-transparent .select2-selection--single:focus, .auth .auth-form-transparent .select2-container--default .select2-selection--single .select2-search__field:focus, .select2-container--default .select2-selection--single .auth .auth-form-transparent .select2-search__field:focus, .auth .auth-form-transparent .typeahead:focus,
+.auth .auth-form-transparent .tt-query:focus,
+.auth .auth-form-transparent .tt-hint:focus, .auth .auth-form-transparent .form-control:active, .auth .auth-form-transparent .select2-container--default .select2-selection--single:active, .select2-container--default .auth .auth-form-transparent .select2-selection--single:active, .auth .auth-form-transparent .select2-container--default .select2-selection--single .select2-search__field:active, .select2-container--default .select2-selection--single .auth .auth-form-transparent .select2-search__field:active, .auth .auth-form-transparent .typeahead:active,
+.auth .auth-form-transparent .tt-query:active,
+.auth .auth-form-transparent .tt-hint:active,
+.auth .auth-form-transparent .input-group-text:focus,
+.auth .auth-form-transparent .input-group-text:active {
+  border-color: #392ccd;
+}
+
+.auth .auth-form-transparent select {
+  outline-color: #392ccd;
+}
+
+.auth.auth-img-bg {
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .auth.auth-img-bg .auth-form-transparent {
+    width: 55%;
+    margin: auto;
+  }
+}
+
+.auth .brand-logo {
+  margin-bottom: 2rem;
+}
+
+.auth .brand-logo img {
+  width: 150px;
+}
+
+.auth form .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.auth form .form-group label {
+  font-size: .8125rem;
+}
+
+.auth form .form-group .form-control, .auth form .form-group .select2-container--default .select2-selection--single, .select2-container--default .auth form .form-group .select2-selection--single, .auth form .form-group .select2-container--default .select2-selection--single .select2-search__field, .select2-container--default .select2-selection--single .auth form .form-group .select2-search__field, .auth form .form-group .typeahead,
+.auth form .form-group .tt-query,
+.auth form .form-group .tt-hint {
+  background: transparent;
+  border-radius: 0;
+  font-size: .9375rem;
+}
+
+.auth form .auth-form-btn {
+  height: 50px;
+  line-height: 1.5;
+}
+
+.auth form .auth-link {
+  font-size: 0.875rem;
+}
+
+.auth form .auth-link:hover {
+  color: initial;
+}
+
+.auth.multi-step-login {
+  height: 100%;
+  min-height: 100vh;
+  background: #e8eff9;
+}
+
+.auth.multi-step-login .step-form {
+  position: relative;
+  width: 530px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.auth.multi-step-login .step-form .step-progress {
+  padding-left: 0;
+  list-style-type: none;
+  margin-bottom: 30px;
+  overflow: hidden;
+  counter-reset: step;
+  display: flex;
+  justify-content: space-around;
+}
+
+.auth.multi-step-login .step-form .step-progress li {
+  position: relative;
+  list-style-type: none;
+  color: #001737;
+  font-size: 18px;
+  font-weight: 500;
+  float: left;
+}
+
+.auth.multi-step-login .step-form .step-progress li:before {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  content: counter(step);
+  counter-increment: step;
+  width: 30px;
+  height: 30px;
+  line-height: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #001737;
+  background: #d4e1f4;
+  border-radius: 100px;
+  margin: 0 auto 5px auto;
+}
+
+.auth.multi-step-login .step-form .step-progress li.active:before {
+  background: #17c964;
+  color: #fff;
+}
+
+.auth.multi-step-login .step-form .step-progress li:first-child:after {
+  content: none;
+}
+
+.auth.multi-step-login .step-form fieldset {
+  background: #fff;
+  border-radius: 10px;
+  padding: 30px 30px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+}
+
+.auth.multi-step-login .step-form fieldset:not(:first-of-type) {
+  display: none;
+}
+
+.auth.multi-step-login .step-form .form-control, .auth.multi-step-login .step-form .select2-container--default .select2-selection--single, .select2-container--default .auth.multi-step-login .step-form .select2-selection--single, .auth.multi-step-login .step-form .select2-container--default .select2-selection--single .select2-search__field, .select2-container--default .select2-selection--single .auth.multi-step-login .step-form .select2-search__field, .auth.multi-step-login .step-form .typeahead,
+.auth.multi-step-login .step-form .tt-query,
+.auth.multi-step-login .step-form .tt-hint {
+  height: 40px;
+  border-radius: 4px;
+}
+
+.page-body-wrapper {
+  min-height: calc(100vh - 64px);
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 64px;
+}
+
+.page-body-wrapper.full-page-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 0;
+}
+
+.main-panel {
+  transition: width 0.25s ease, margin 0.25s ease;
+  width: calc(100% - 255px);
+  min-height: calc(100vh - 64px);
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+
+@media (max-width: 991px) {
+  .main-panel {
+    margin-left: 0;
+    width: 60%;
+  }
+}
+
+.content-wrapper {
+  background: #e8eff9;
+  padding: 1.875rem 1.875rem 0 1.875rem;
+  width: 60%;
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+}
+
+@media (max-width: 767px) {
+  .content-wrapper {
+    padding: 1.5rem 1.5rem;
+  }
+}

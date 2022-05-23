@@ -1,0 +1,62 @@
+{% extends 'base2.html.twig' %}
+
+{% block title %}Hello PostulerController!{% endblock %}
+
+{% block body %}
+<section class="site-section">
+      <div class="container">
+
+        <div class="row align-items-center mb-5">
+          <div class="col-lg-8 mb-4 mb-lg-0">
+            <div class="d-flex align-items-center">
+              <div>
+                <h2>Post A Job</h2>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <div class="row mb-5">
+          <div class="col-lg-12">
+            <form class="p-4 p-md-5 border rounded" method="post">
+              <h3 class="text-black mb-5 border-bottom pb-2">Job Details</h3>
+              
+              <div class="form-group">
+                <label for="company-website-tw d-block">Upload Featured Image</label> <br>
+                <label class="btn btn-primary btn-md btn-file">
+                  Browse File<input type="file" hidden>
+                </label>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" class="form-control" id="email" placeholder="you@yourdomain.com">
+              </div>
+              <div class="form-group">
+                <label for="job-title">Job Title</label>
+                <input type="text" class="form-control" id="job-title" placeholder="Product Designer">
+              </div>
+              <div class="form-group">
+                <label for="job-location">Location</label>
+                <input type="text" class="form-control" id="job-location" placeholder="e.g. New York">
+              </div>
+             
+              <div class="form-group">
+                <label for="company-name">Company Name</label>
+                <input type="text" class="form-control" id="company-name" placeholder="e.g. New York">
+              </div>
+
+              <div class="form-group">
+                <label for="company-website">Website (Optional)</label>
+                <input type="text" class="form-control" id="company-website" placeholder="https://">
+              </div>
+            </form>
+          </div>
+
+         
+        </div>
+    
+      </div>
+    </section>
+
+{% endblock %}

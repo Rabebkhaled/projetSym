@@ -18,9 +18,6 @@ class ListejobsController extends AbstractController
         ]);
     }
 
-
- 
-
     }
 
 

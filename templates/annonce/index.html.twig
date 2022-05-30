@@ -3,9 +3,16 @@
 {% block title %}Annonce index{% endblock %}
 
 {% block body %}
-    <h1>Annonce index</h1>
-{% for annonce in annonces %}
-<div class="single-job-items mb-30">
+    <!-- Hero Area Start-->
+   
+        <div class="slider-area ">
+        <img class="single-slider section-overly slider-height2 d-flex align-items-center" src="/img/hero/about.jpg"alt=""/>
+        </div>
+        <!-- Hero Area End -->
+        <br>
+                                <!-- Count of Job list End -->
+                            {% for annonce in annonces %}
+                                <div class="single-job-items mb-30">
                                     <div class="job-items">
                                         <div class="company-img">
                                             <li><img src="/uploads/images/annoc/{{ annonce.image }}" alt=""></li>
@@ -23,7 +30,7 @@
                                         </div>
                                     </div>
                                     <div class="items-link items-link2 f-right">
-                                        <a href="{{ path('app_detailjob') }}">Apply</a>
+                                        <a href={{ path('app_detailjob',{'id':annonce.id})}}>Apply</a>
                                         <span>7 hours ago</span>
                                     </div>
                                 </div>

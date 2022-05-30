@@ -143,6 +143,9 @@
             "config/packages/sensio_framework_extra.yaml"
         ]
     },
+    "shapecode/hidden-entity-type-bundle": {
+        "version": "5.2.0"
+    },
     "symfony/amqp-messenger": {
         "version": "v5.4.5"
     },

@@ -16,7 +16,6 @@ class AnnonceType extends AbstractType
             ->add('description')
             ->add('salaire')
             ->add('adresse')
-            ->add('duré')
             ->add('image')
         ;
     }
